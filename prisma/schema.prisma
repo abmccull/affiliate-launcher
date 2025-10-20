@@ -1,0 +1,138 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// Program - Main affiliate program configuration for a company
+model Program {
+  id              String   @id @default(cuid())
+  companyId       String
+  defaultRate     Float    // Commission rate percentage (e.g., 10.0 for 10%)
+  payoutFrequency String   // "weekly" or "monthly"
+  cookieWindow    Int      @default(30) // Days for attribution
+  status          String   @default("active") // "active" or "inactive"
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+
+  offers        Offer[]
+  affiliates    Affiliate[]
+  payoutBatches PayoutBatch[]
+
+  @@unique([companyId])
+  @@index([companyId])
+}
+
+// Offer - Individual affiliate offers/campaigns
+model Offer {
+  id           String    @id @default(cuid())
+  programId    String
+  experienceId String? // Optional: tie offer to specific experience
+  name         String
+  description  String    @db.Text
+  terms        String?   @db.Text
+  visibility   String    @default("public") // "public", "invite-only", "private"
+  startAt      DateTime?
+  endAt        DateTime?
+  rateOverride Float? // Override default commission rate for this offer
+  isPublished  Boolean   @default(false)
+  createdAt    DateTime  @default(now())
+  updatedAt    DateTime  @updatedAt
+
+  program        Program          @relation(fields: [programId], references: [id], onDelete: Cascade)
+  creatives      Creative[]
+  earningsEvents EarningsEvent[]
+
+  @@index([programId])
+  @@index([visibility])
+  @@index([isPublished])
+}
+
+// Affiliate - Users who join the program as affiliates
+model Affiliate {
+  id          String    @id @default(cuid())
+  programId   String
+  userId      String // Whop user ID
+  status      String    @default("pending") // "pending", "approved", "rejected", "banned"
+  tier        String?   @default("standard") // Custom tier names
+  customRate  Float? // Custom commission rate for this affiliate
+  rateExpiry  DateTime? // When custom rate expires
+  appliedAt   DateTime  @default(now())
+  approvedAt  DateTime?
+  rejectedAt  DateTime?
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+
+  program        Program          @relation(fields: [programId], references: [id], onDelete: Cascade)
+  earningsEvents EarningsEvent[]
+
+  @@unique([programId, userId])
+  @@index([programId])
+  @@index([userId])
+  @@index([status])
+}
+
+// Creative - Marketing assets for affiliates
+model Creative {
+  id        String   @id @default(cuid())
+  offerId   String
+  type      String // "image", "video", "banner", "other"
+  url       String // URL to the creative asset
+  title     String
+  notes     String?  @db.Text
+  metadata  Json? // Additional metadata about the creative
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  offer Offer @relation(fields: [offerId], references: [id], onDelete: Cascade)
+
+  @@index([offerId])
+  @@index([type])
+}
+
+// EarningsEvent - Track clicks, conversions, and payouts
+model EarningsEvent {
+  id          String   @id @default(cuid())
+  affiliateId String
+  offerId     String?
+  type        String // "click", "conversion", "payout"
+  amount      Float    @default(0) // Commission amount (0 for clicks)
+  currency    String   @default("usd")
+  sourceRef   String? // Reference to external payment/conversion ID
+  metadata    Json? // Additional event data
+  createdAt   DateTime @default(now())
+
+  affiliate Affiliate @relation(fields: [affiliateId], references: [id], onDelete: Cascade)
+  offer     Offer?    @relation(fields: [offerId], references: [id], onDelete: SetNull)
+
+  @@index([affiliateId])
+  @@index([offerId])
+  @@index([type])
+  @@index([createdAt])
+}
+
+// PayoutBatch - Batch payout processing records
+model PayoutBatch {
+  id          String    @id @default(cuid())
+  programId   String
+  total       Float // Total amount paid out
+  count       Int // Number of affiliates paid
+  status      String    @default("pending") // "pending", "processing", "completed", "failed"
+  metadata    Json? // Details about payouts, recipient IDs, etc.
+  runAt       DateTime  @default(now())
+  processedAt DateTime?
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+
+  program Program @relation(fields: [programId], references: [id], onDelete: Cascade)
+
+  @@index([programId])
+  @@index([status])
+  @@index([runAt])
+}
