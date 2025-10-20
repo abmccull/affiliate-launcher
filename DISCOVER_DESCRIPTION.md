@@ -104,7 +104,7 @@ Affiliate Launcher is the complete affiliate program management solution built s
 ✅ Complete Payout History
 ✅ Email Support
 
-**14-Day Free Trial** - No credit card required
+**7-Day Free Trial** - No credit card required
 **Cancel Anytime** - No long-term commitment
 
 ---
@@ -306,7 +306,7 @@ Reward players for recruiting friends. Track referrals and pay out in-game rewar
 ## 🎁 Launch Offer
 
 **First 100 Installs Get:**
-- Extended 30-day free trial
+- Extended 14-day free trial
 - Exclusive onboarding call
 - Custom affiliate templates
 - Featured in our showcase
@@ -347,7 +347,7 @@ A: Yes! Set default rates for your program, override rates per offer, and assign
 A: Toggle your program to "inactive" anytime. No affiliates can join while paused, but existing data is preserved.
 
 **Q: Is there a contract or commitment?**
-A: No! Start with a 14-day free trial. Cancel anytime during or after the trial. No hidden fees or long-term contracts.
+A: No! Start with a 7-day free trial. Cancel anytime during or after the trial. No hidden fees or long-term contracts.
 
 **Q: Can I use this for physical products?**
 A: While designed for digital products on Whop, you can track any type of sale if you manually record conversions.

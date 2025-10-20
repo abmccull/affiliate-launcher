@@ -104,9 +104,9 @@ export default function DiscoverPage() {
 								<p className="text-blue-100 mb-6">Everything you need to grow</p>
 								<div className="text-6xl font-bold text-white mb-2">$29</div>
 								<div className="text-blue-100 text-lg">per month</div>
-								<div className="mt-4 inline-block bg-blue-800 text-blue-100 px-4 py-2 rounded-lg text-sm font-semibold">
-									14-Day Free Trial
-								</div>
+							<div className="mt-4 inline-block bg-blue-800 text-blue-100 px-4 py-2 rounded-lg text-sm font-semibold">
+								7-Day Free Trial
+							</div>
 							</div>
 							<ul className="space-y-4 text-white mb-8">
 								<li className="flex items-start">

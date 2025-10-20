@@ -73,7 +73,7 @@ Affiliate Launcher is the complete affiliate program management solution built f
 - Creative asset library
 - Email support
 
-**14-day free trial** - No credit card required
+**7-day free trial** - No credit card required
 
 ### Get Started in 3 Steps
 
@@ -107,7 +107,7 @@ Transform your members into your best salespeople. Install now!
 
 ## Call to Action
 
-Install Affiliate Launcher and turn your community into your growth engine. Start your 14-day free trial today—no credit card required!
+Install Affiliate Launcher and turn your community into your growth engine. Start your 7-day free trial today—no credit card required!
 
 **[Install Now]** **[View Demo]** **[Documentation]**
 
