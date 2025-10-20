@@ -65,9 +65,15 @@ Affiliate Launcher is the complete affiliate program management solution built f
 
 ### Pricing
 
-**Starter (Free):** 1 offer, unlimited affiliates, manual payouts
-**Growth ($49/mo):** Unlimited offers, batch payouts, advanced analytics
-**Scale ($149/mo):** API access, white label, priority support
+**Pro Plan ($29/mo):** Everything you need to scale
+- Unlimited offers & affiliates
+- One-click batch payouts
+- Real-time analytics dashboard
+- Custom commission rates
+- Creative asset library
+- Email support
+
+**14-day free trial** - No credit card required
 
 ### Get Started in 3 Steps
 
@@ -101,7 +107,7 @@ Transform your members into your best salespeople. Install now!
 
 ## Call to Action
 
-Install Affiliate Launcher and turn your community into your growth engine. First 100 installs get 14 days of Growth plan free!
+Install Affiliate Launcher and turn your community into your growth engine. Start your 14-day free trial today—no credit card required!
 
 **[Install Now]** **[View Demo]** **[Documentation]**
 

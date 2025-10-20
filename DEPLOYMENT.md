@@ -66,9 +66,7 @@ DATABASE_URL=your_postgresql_connection_string
 WHOP_WEBHOOK_SECRET=your_webhook_secret_from_whop
 
 # Optional: Access Pass Plan IDs for app monetization
-NEXT_PUBLIC_STARTER_PLAN_ID=plan_xxx
-NEXT_PUBLIC_GROWTH_PLAN_ID=plan_xxx
-NEXT_PUBLIC_SCALE_PLAN_ID=plan_xxx
+NEXT_PUBLIC_PRO_PLAN_ID=plan_xxx
 ```
 
 ## Step 4: Run Database Migrations

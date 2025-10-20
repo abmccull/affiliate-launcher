@@ -91,76 +91,60 @@ export default function DiscoverPage() {
 
 				{/* Pricing Section */}
 				<div className="mb-16">
-					<h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">
+					<h2 className="text-3xl font-bold text-gray-900 mb-4 text-center">
 						Simple, Transparent Pricing
 					</h2>
-					<div className="grid md:grid-cols-3 gap-6">
-						<div className="bg-white rounded-xl p-8 shadow-md border-2 border-gray-200">
-							<h3 className="text-2xl font-bold text-gray-900 mb-2">Starter</h3>
-							<p className="text-gray-600 mb-4">Perfect for getting started</p>
-							<div className="text-4xl font-bold text-blue-600 mb-6">Free</div>
-							<ul className="space-y-3 mb-8">
+					<p className="text-xl text-gray-600 mb-12 text-center max-w-2xl mx-auto">
+						One plan with everything you need to scale your affiliate program
+					</p>
+					<div className="max-w-xl mx-auto">
+						<div className="bg-gradient-to-br from-blue-600 to-blue-700 rounded-2xl p-10 shadow-2xl border-2 border-blue-500">
+							<div className="text-center mb-8">
+								<h3 className="text-3xl font-bold text-white mb-2">Pro Plan</h3>
+								<p className="text-blue-100 mb-6">Everything you need to grow</p>
+								<div className="text-6xl font-bold text-white mb-2">$29</div>
+								<div className="text-blue-100 text-lg">per month</div>
+								<div className="mt-4 inline-block bg-blue-800 text-blue-100 px-4 py-2 rounded-lg text-sm font-semibold">
+									14-Day Free Trial
+								</div>
+							</div>
+							<ul className="space-y-4 text-white mb-8">
 								<li className="flex items-start">
-									<span className="text-green-600 mr-2">✓</span>
-									<span>1 Active Offer</span>
+									<span className="text-2xl mr-3">✓</span>
+									<span className="text-lg">Unlimited Offers & Affiliates</span>
 								</li>
 								<li className="flex items-start">
-									<span className="text-green-600 mr-2">✓</span>
-									<span>Unlimited Affiliates</span>
+									<span className="text-2xl mr-3">✓</span>
+									<span className="text-lg">One-Click Batch Payouts</span>
 								</li>
 								<li className="flex items-start">
-									<span className="text-green-600 mr-2">✓</span>
-									<span>Manual Payouts</span>
-								</li>
-							</ul>
-						</div>
-
-						<div className="bg-gradient-to-br from-blue-600 to-blue-700 rounded-xl p-8 shadow-lg border-2 border-blue-500 transform scale-105">
-							<h3 className="text-2xl font-bold text-white mb-2">Growth</h3>
-							<p className="text-blue-100 mb-4">Most popular choice</p>
-							<div className="text-4xl font-bold text-white mb-6">$49/mo</div>
-							<ul className="space-y-3 mb-8 text-white">
-								<li className="flex items-start">
-									<span className="mr-2">✓</span>
-									<span>Unlimited Offers</span>
+									<span className="text-2xl mr-3">✓</span>
+									<span className="text-lg">Real-Time Analytics Dashboard</span>
 								</li>
 								<li className="flex items-start">
-									<span className="mr-2">✓</span>
-									<span>Batch Payouts</span>
+									<span className="text-2xl mr-3">✓</span>
+									<span className="text-lg">Custom Commission Rates</span>
 								</li>
 								<li className="flex items-start">
-									<span className="mr-2">✓</span>
-									<span>Analytics Dashboard</span>
+									<span className="text-2xl mr-3">✓</span>
+									<span className="text-lg">Creative Asset Library</span>
 								</li>
 								<li className="flex items-start">
-									<span className="mr-2">✓</span>
-									<span>Custom Commission Rates</span>
-								</li>
-							</ul>
-						</div>
-
-						<div className="bg-white rounded-xl p-8 shadow-md border-2 border-gray-200">
-							<h3 className="text-2xl font-bold text-gray-900 mb-2">Scale</h3>
-							<p className="text-gray-600 mb-4">For power users</p>
-							<div className="text-4xl font-bold text-purple-600 mb-6">$149/mo</div>
-							<ul className="space-y-3 mb-8">
-								<li className="flex items-start">
-									<span className="text-green-600 mr-2">✓</span>
-									<span>Everything in Growth</span>
+									<span className="text-2xl mr-3">✓</span>
+									<span className="text-lg">Push Notifications with Deep Links</span>
 								</li>
 								<li className="flex items-start">
-									<span className="text-green-600 mr-2">✓</span>
-									<span>API Access</span>
+									<span className="text-2xl mr-3">✓</span>
+									<span className="text-lg">Complete Earnings & Payout History</span>
 								</li>
 								<li className="flex items-start">
-									<span className="text-green-600 mr-2">✓</span>
-									<span>Priority Support</span>
-								</li>
-								<li className="flex items-start">
-									<span className="text-green-600 mr-2">✓</span>
-									<span>White Label Options</span>
+									<span className="text-2xl mr-3">✓</span>
+									<span className="text-lg">Email Support</span>
 								</li>
 							</ul>
+							<div className="text-center text-blue-100 text-sm">
+								No credit card required • Cancel anytime
+							</div>
 						</div>
 					</div>
 				</div>

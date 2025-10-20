@@ -90,30 +90,22 @@ Affiliate Launcher is the complete affiliate program management solution built s
 
 ## 💰 Pricing
 
-### Starter (Free Forever)
-- 1 Active Offer
-- Unlimited Affiliates
-- Manual Payouts
-- Basic Analytics
-- Push Notifications
+### Pro Plan - $29/month
+**Everything You Need to Scale**
 
-### Growth ($49/month)
-**Most Popular**
-- Unlimited Offers
-- Batch Payouts
-- Advanced Analytics
-- Custom Commission Rates
-- Creative Library
-- Priority Support
+✅ Unlimited Offers
+✅ Unlimited Affiliates
+✅ One-Click Batch Payouts
+✅ Real-Time Analytics Dashboard
+✅ Custom Commission Rates
+✅ Creative Asset Library
+✅ Push Notifications with Deep Links
+✅ Earnings Tracking & Reports
+✅ Complete Payout History
+✅ Email Support
 
-### Scale ($149/month)
-**For Power Users**
-- Everything in Growth
-- API Access
-- White Label Options
-- Custom Integrations
-- Dedicated Account Manager
-- Revenue Sharing Features
+**14-Day Free Trial** - No credit card required
+**Cancel Anytime** - No long-term commitment
 
 ---
 
@@ -314,7 +306,7 @@ Reward players for recruiting friends. Track referrals and pay out in-game rewar
 ## 🎁 Launch Offer
 
 **First 100 Installs Get:**
-- 14-day Growth plan free trial
+- Extended 30-day free trial
 - Exclusive onboarding call
 - Custom affiliate templates
 - Featured in our showcase
@@ -355,7 +347,7 @@ A: Yes! Set default rates for your program, override rates per offer, and assign
 A: Toggle your program to "inactive" anytime. No affiliates can join while paused, but existing data is preserved.
 
 **Q: Is there a contract or commitment?**
-A: No! Start on the free Starter plan. Upgrade anytime. Cancel anytime. No hidden fees.
+A: No! Start with a 14-day free trial. Cancel anytime during or after the trial. No hidden fees or long-term contracts.
 
 **Q: Can I use this for physical products?**
 A: While designed for digital products on Whop, you can track any type of sale if you manually record conversions.

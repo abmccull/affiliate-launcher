@@ -59,10 +59,8 @@ DATABASE_URL=postgresql://user:password@localhost:5432/affiliate_launcher
 # Webhook Secret
 WHOP_WEBHOOK_SECRET=your_webhook_secret
 
-# Optional: Access Pass Plan IDs
-NEXT_PUBLIC_STARTER_PLAN_ID=plan_starter
-NEXT_PUBLIC_GROWTH_PLAN_ID=plan_growth
-NEXT_PUBLIC_SCALE_PLAN_ID=plan_scale
+# Optional: Access Pass Plan ID (for Pro tier)
+NEXT_PUBLIC_PRO_PLAN_ID=plan_pro
 ```
 
 4. Run database migrations:
@@ -253,11 +251,16 @@ affiliate-launcher/
 └── components/          # Shared React components
 ```
 
-## Pricing Tiers
+## Pricing
 
-- **Starter** (Free): 1 offer, unlimited affiliates, manual payouts
-- **Growth** ($49/mo): Unlimited offers, batch payouts, analytics, custom rates
-- **Scale** ($149/mo): Everything + API access, priority support, white label
+- **Pro Plan** ($29/mo): Everything you need to scale
+  - Unlimited offers & affiliates
+  - One-click batch payouts
+  - Real-time analytics dashboard
+  - Custom commission rates
+  - Creative asset library
+  - Email support
+  - **14-day free trial** - No credit card required
 
 ## Support
 

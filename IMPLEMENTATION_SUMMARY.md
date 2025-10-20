@@ -67,7 +67,7 @@ Complete implementation of the Affiliate Launcher Whop app as specified in the P
 ### Phase 7: Discover View
 - ✅ Public discover landing page
 - ✅ Features showcase
-- ✅ Pricing tiers display (Starter/Growth/Scale)
+- ✅ Pricing display (Pro Plan - $29/mo)
 - ✅ Success stories section
 - ✅ Install CTA
 
